@@ -15,4 +15,4 @@ require("./controllers/quizzes-controller")(app)
 require("./controllers/question-controller")(app)
 
 
-app.listen(3002)
+app.listen(process.env.PORT || 3002)
