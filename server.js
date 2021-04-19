@@ -7,7 +7,7 @@ app.use(bodyParser.json())
 const uri = process.env.MONGODB_URI;
 
 const mongoose = require('mongoose');
-mongoose.connect(uri,
+mongoose.connect("mongodb+srv://admin:kfallon123@cluster0.lgoaq.mongodb.net/whiteboard?retryWrites=true&w=majority",
     {useNewUrlParser: true, useUnifiedTopology: true});
 
 // configure CORS
